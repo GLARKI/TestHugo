@@ -8,8 +8,8 @@
 appearance:
   theme_day: minimal
   theme_night: minimal
-  font: minimal
-  font_size: L
+  font: ocean
+  font_size: S
 
 # SEO
 
@@ -43,7 +43,8 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: 
+    notice: <a href="https://www.uk-essen.de/datenschutz/">Data Protection</a><br><br>© {year} Institute for Artificial Intelligence in Medicine.<br> This work is licensed under {license}.
     license:
       enable: true
       allow_derivatives: false
@@ -63,6 +64,9 @@ features:
   syntax_highlighter:
     theme_light: github-light
     theme_dark: dracula
+    extra_languages:
+      - r
+      - latex
   math:
     enable: false
   privacy_pack:
@@ -70,7 +74,7 @@ features:
   repository:
     url: 'https://github.com/<username>/<repository>'
     content_dir: content
-    branch: main
+    branch: master
   avatar:
     gravatar: false
     shape: circle
@@ -102,10 +106,14 @@ features:
 
 extensions:
   cms:
-    branch: main
+    branch: master
     local_backend: false
+  isotope:
+    enable: true
   academicons:
     enable: true
+
+plugins_js: [custom]
 
 # Security
 
